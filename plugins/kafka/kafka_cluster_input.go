@@ -53,7 +53,7 @@ type KafkaClusterInputConfig struct {
 	Topic             string
 	Partition         int32
 	PartitionStrategy string `toml:"partition_strategy"` // range, round_robin
-	Group             string
+	Group             string `toml:"group"`
 	DefaultFetchSize  int32  `toml:"default_fetch_size"`
 	MinFetchSize      int32  `toml:"min_fetch_size"`
 	MaxMessageSize    int32  `toml:"max_message_size"`
